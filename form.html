@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<nav>
+		<a href="index.html">Home Page</a>
+	</nav>
+
+	<section>
+		<h1>Questionnaire</h1>
+		<form
+        action="https://formspree.io/xqkzyrrb"
+        method="POST"
+        >
+			<label>
+            Your Name:<br>
+            <input type="text" name="yourname" placeholder="Your Name" required>
+         </label>
+			<br>
+			<br>
+			<label>
+            Email:<br>
+            <input type="email" name="email" placeholder="Email" required>
+        </label>
+			<br>
+			<br>
+			<label>
+            Gender:
+        </label>
+			<label>
+            <input type="radio" name="gender" value="male">Male
+        </label>
+			<label>
+            <input type="radio" name="gender" value="female">Female
+        </label>
+			<label>
+            <input type="radio" name="gender" value="oher">Other
+        </label>
+
+		<h1>Choose the right answer bellow:</h1>
+		<label>
+            What was the previous page about?
+            <br>
+            <select name="vehicle">
+                <option value="boats">Boats</option>
+                <option value="cars">Cars</option>
+                <option value="planes">Planes</option>
+            </select>
+        </label>
+		<br>
+		<br>
+		<label>
+            After which company(companies) the previous page has been created?</label><br>
+            <label><input type="checkbox" name="companyname" value="bmw">BMW</label>
+            <label><input type="checkbox" name="companyname" value="lexus">Lexus</label>
+            <label><input type="checkbox" name="companyname" value="tesla">Tesla</label>
+		<br>
+		<br>
+		<label>Have all the rights been reserved?</label>
+            <br>
+        <label>
+            <input list="rights">
+            <datalist id="rights">
+                <option value="yap">
+                <option value="kinda">
+                <option value="nope">
+            </datalist>
+        </label>
+		<br>
+		<br>
+		<input type="submit" value="SEND">
+        </form>
+    </section>
+
+</body>
+
+</html>
